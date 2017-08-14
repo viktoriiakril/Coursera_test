@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+	font-family: Helvetica;
+}
+
+h1 {
+	text-align: center;
+}
+
+section {
+	background-color: #eee;
+	border: 1px solid black;
+	position: relative;
+	margin-top: 15px;
+	padding: 30px 15px 15px 15px;
+}
+
+section h1 {
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	border: 1px solid black;
+	margin: 0px;
+	width: 150px;
+	padding: 3px;
+}
+
+#chicken h1 {
+	background-color: #88ee88;
+}
+
+#beef h1 {
+	background-color: #8888ee;
+}
+
+#pork h1 {
+	background-color: #ee8888;
+}
+
+@media (min-width: 992px) {
+	section {
+		float: left;
+		width: 32%;
+		margin: 0px 0.5%;
+	}
+
+	#chicken {
+		margin-left: 1%;
+	}
+
+	#pork {
+		margin-right: 1%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#chicken, #beef {
+		float: left;
+		width: 47%;
+		margin: 15px 1%;
+	}
+
+	#chicken {
+		margin-left: 2%;
+	}
+
+	#beef {
+		margin-right: 2%;
+	}
+
+	#pork {
+		width: 96%;
+		margin: 15px 2%;
+		clear: both;
+	}
+}
